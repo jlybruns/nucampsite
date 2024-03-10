@@ -7,6 +7,7 @@ import CampsitesDirectoryPage from './pages/CampsitesDirectoryPage';
 import './App.css';
 import { CAMPSITES } from './app/shared/CAMPSITES';
 import CampsiteDetailPage from './pages/CampsiteDetailPage';
+import AboutPage from './pages/AboutPage';
 
 function App() {
   return (
@@ -15,8 +16,9 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='contact' element={<ContactPage />} />
-        <Route path='directory' element={<CampsitesDirectoryPage/>}/>
+        <Route path='directory' element={<CampsitesDirectoryPage />}/>
         <Route path='directory/:campsiteId' element={<CampsiteDetailPage />} /> 
+        <Route path='about' element={<AboutPage />} />
       </Routes>
       <Footer />
     </div>
